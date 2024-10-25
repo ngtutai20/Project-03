@@ -9,10 +9,14 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Sora", sans-serif ;
-    height: 10000px;
 }
 
 /* common */
+
+input , textarea, select , button {
+    font-family: inherit;
+    font-size: inherit;
+}
 
 .btn {
     display: inline-block;
@@ -27,6 +31,7 @@ body {
     border-radius: 999px;
     border: 2px solid #2E80CE;
     color: #fff;
+    transition: 0.25s;
 }
 
 .btn:hover {
@@ -71,6 +76,7 @@ body {
 
 .logo__text {
     position: relative;
+    font-family: "Sora" , sans-serif;
     top: 0.2em;
     margin-left: 0.6em;
     display: inline-block;
@@ -250,7 +256,7 @@ a {
 }
 
 .service__desc {
-    margin-top: 18px;
+    padding-top: 18px;
     text-align: center;
     width: 468px;
     margin: 0 auto;
@@ -273,7 +279,7 @@ a {
     height: 128px;
     border-radius: 10px;
     padding: 20px 60px 20px 20px;
-
+    transition: 0.25s;
 }
 
 .service__item:hover {
@@ -496,6 +502,9 @@ a {
 .member {
     text-align: center;
 }
+.member:hover .member-face {
+    transform: scale(1.05);
+}
 
 .member-img {
     position: relative;
@@ -512,6 +521,7 @@ a {
     width: 262px;
     height: 290px;
     object-fit: cover;
+    transition: 0.25s;
 }
 
 .member__name {
@@ -532,7 +542,7 @@ a {
 .team-action {
     margin-top: 38px;
     display: flex;
-    gap: 30px;
+    gap: 18px;
     justify-content: center;
 }
 
@@ -545,6 +555,7 @@ a {
     border: 1px solid #575F66;
     border-radius: 50%;
     color: #575F66;
+    transition: 0.25s;
 }
 
 .team-actioln__icon:hover {
@@ -597,6 +608,269 @@ a {
     gap: 18px;
 }
 
+.dowload {
+    cursor: pointer;
+}
+
+.blog {
+    margin-top: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bog-content{
+    width: 470px;
+}
+.blog__heading {
+    color: #10375C;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2; /* 120% */
+    letter-spacing: -1px;
+}
+
+.blog__action-read-all {
+    position: relative;
+    display: inline-block;
+    margin: 28px 0;
+    color: #10375C;
+    font-family: Inter;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.55; /* 155.556% */
+}
+
+.blog__action-read-all::before {
+    display: inline-block;
+    content: "";
+    width: 110px;
+    height: 1px;
+    background-color: #10375C;
+    position: absolute;
+    top: 85%;
+    cursor: pointer;
+}
+
+.blog-action {
+    display: flex;
+    gap: 18px;
+}
+
+.blog-list {
+    display: flex;
+    gap: 30px;
+}
+
+.blog-item {
+    width: 270px;
+    border-radius: 12px;
+    background: #FFF;
+    outline: 1px solid #E8EBEE;
+    overflow: hidden;
+}
+.blog-item:hover {
+    box-shadow: 0px 18px 50px 0px rgba(0, 0, 0, 0.05);
+}
+.blog-item:hover .blog-item__img {
+    transform: scale(1.05);
+
+}
+
+.blog-item__img {
+    width: 270px;
+    height: 172px;
+    object-fit: cover;
+    border-radius: 12px 12px 0px 0px;
+    transition: 0.25s;
+
+}
+
+.blog-item__text {
+    padding: 18px 22px 21px 22px ;
+}
+
+.blog-item__heading {
+    color: #10375C;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.62; /* 162.5% */
+}
+
+.blog-item__desc {
+    margin-top: 10px;
+    color: #575F66;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.71; /* 171.429% */
+}
+
+.blog-item__btn {
+    display: inline-block;
+    margin-top: 12px;
+    color: #2E80CE;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.blog-item__btn:hover {
+    color: #10375C;
+    text-decoration: underline;
+}
+
+/* CTA-2 */
+
+.cta-2 {
+    margin-top: 170px;
+    padding: 100px 179px;
+    text-align: center;
+    background: #F6FBFF;
+}
+
+.cta-2__heading {
+    color: #10375C;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.20; /* 120% */
+    letter-spacing: -1px;
+}
+
+.cta-2__desc {
+    display: inline-block;
+    margin: 38px auto;
+    width: 617px;
+    color: #575F66;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75; /* 175% */
+}
+
+#cta-2__btn {
+    font-size: 1.8rem;
+}
+
+.footer {
+    padding-top: 100px;
+    background: #10375C;
+    font-family: "Open Sans", sans-serif;
+}
+
+.footer__desc {
+    display: inline-block;
+    margin-top: 21px;
+    width: 336px;
+    color: #A9B3BB;
+    font-family: "Open Sans";
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+}
+
+/* footer */
+
+
+.footer__row {
+    display: grid;
+    grid-template-columns: 1fr.4fr 0.4fr 1fr;
+    column-gap: 78px;
+}
+
+.footer__heading {
+    margin-bottom: 20px;
+    color: #FFF;
+    font-family: "Open Sans";
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75; /* 175% */
+}
+
+.footer__list {
+    margin-bottom: 28px;
+}
+
+.footer__link {
+    white-space: nowrap;    
+    color: #A9B3BB;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85; /* 185.714% */
+    margin-bottom: 10px;
+}
+.footer__link:hover {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+.footer__social {
+    display: flex;
+    column-gap: 10px;
+    margin-bottom: 28px;
+}
+.footer__social-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%; 
+    background: #FFF;
+    color: #2E80CE;
+    transition: 0.25s;
+}
+
+.footer__social-btn:hover {
+    color: #FFF;
+    background: #2E80CE;
+}
+
+.submit__desc {
+    margin-top: 0;
+}
+
+.footer-form {
+    display: flex;
+    margin-top: 10px;
+    column-gap: 12px;
+}
+
+.footer-form__input {
+    padding: 0 10px;
+    width: 212px;
+    height: 46px;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid #406181;
+    background-color: transparent;
+    color: #FFF;
+}
+
+.footer-form__input::placeholder {
+    color: #9CA8B1;
+    font-size: 1.4;
+    font-weight: 400;
+    line-height: 1.85; /* 185.714% */
+}
+
+.footer-form__submit {
+    min-width: 108px;
+    height: 46px;
+    line-height: 46px;
+    border-radius: 4px;
+    font-size: 1.4rem;
+}
+
+.copyright{
+    border-top: 1px solid #406181;
+}
+
+.copyright p{
+    padding: 28px 0 28px 0;
+    color: #AAB3BA;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.84; /* 185.714% */
+}
 
 
 
