@@ -467,4 +467,136 @@ a {
     margin-top: 38px;
 }
 
+/* team */
+
+.team {
+    margin-top: 170px;
+    text-align: center;
+}
+
+.team-heading {
+    color: #10375C;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2; /* 120% */
+    letter-spacing: -1px;
+}
+
+.team-btn {
+    margin-top: 38px;
+}
+
+.team-list {
+    display: grid;
+    margin-top: 70px;
+    grid-template-columns: repeat(4 , 1fr);
+    column-gap: 30px;
+}
+
+.member {
+    text-align: center;
+}
+
+.member-img {
+    position: relative;
+    width: 270px;
+    height: 318px;
+    border-radius: 6px;
+    background: #EAF6FF;
+}
+
+.member-face {
+    position: absolute;
+    bottom: 0;
+    left: 4px;
+    width: 262px;
+    height: 290px;
+    object-fit: cover;
+}
+
+.member__name {
+    margin-top: 12px;
+    color: #10375C;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+}
+
+.member__uni {
+    color: #575F66;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.85; /* 185.714% */
+}
+
+.team-action {
+    margin-top: 38px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.team-actioln__icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #575F66;
+    border-radius: 50%;
+    color: #575F66;
+}
+
+.team-actioln__icon:hover {
+    background-color: #2E80CE;
+    border-color: #2E80CE;
+    color: #FFF;
+}
+
+
+.cta {
+    position: relative;
+    display: flex;
+    height: 427px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 265px;
+    padding: 0 70px;
+    background: #2E80CE;
+}
+.cta__img {
+    width: 284px;
+    height: 522px;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+}
+.cta-content {
+    width: 586px;
+}
+
+.cta__heading {
+    color: #FFF;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2; /* 120% */
+    letter-spacing: -1px;
+}
+
+.cta__desc {
+    margin-top: 18px;
+    color: #FFF;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.66; /* 166.667% */
+}
+
+.cta-action {
+    margin-top: 38px;
+    display: flex;
+    gap: 18px;
+}
+
+
+
 
